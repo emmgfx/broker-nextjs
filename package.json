@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@pw2016/pw-player-communicator": "^2.0.0",
+    "lucide-react": "^0.545.0",
     "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
