@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function middleware(request) {
+export function proxy(request) {
   const basicAuth = request.headers.get("authorization");
   if (basicAuth) {
     const authValue = basicAuth.split(" ")[1];
