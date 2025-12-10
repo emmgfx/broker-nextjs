@@ -5,7 +5,7 @@ export const RoomItem = ({ room }) => {
   return (
     <Link
       href={`/webcam/${room.nick}`}
-      className="flex gap-4 items-center bg-slate-100 hover:bg-slate-200 p-2 rounded"
+      className="flex gap-4 items-center bg-slate-100 hover:bg-slate-200 p-2 rounded-sm"
       prefetch={false}
     >
       <Image

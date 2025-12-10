@@ -16,12 +16,12 @@ export const Input = ({ sendMessage }) => {
     >
       <input
         type="text"
-        className="bg-white rounded py-2 px-3 grow min-w-0"
+        className="bg-white rounded-sm py-2 px-3 grow min-w-0"
         placeholder="Tu mensaje"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button className="text-xs bg-slate-400 py-2 px-3 rounded text-slate-800 font-semibold">
+      <button className="text-xs bg-slate-400 py-2 px-3 rounded-sm text-slate-800 font-semibold">
         Enviar
       </button>
     </form>

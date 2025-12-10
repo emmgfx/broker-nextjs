@@ -4,7 +4,7 @@ export const Messages = ({ messages = [] }) => {
       {[...messages].reverse().map((message, index) => (
         <li
           key={index}
-          className="text-slate-600 bg-slate-100 p-2 text-xs rounded"
+          className="text-slate-600 bg-slate-100 p-2 text-xs rounded-sm"
         >
           {JSON.stringify(message)}
         </li>

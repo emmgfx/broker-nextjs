@@ -4,7 +4,8 @@ import { RoomMode } from "@/components/RoomMode";
 import { Chat } from "@/components/chat";
 import { getIframe, getPartnerToken, getRoom } from "@/shared/api";
 
-export default async function Webcam({ params }) {
+export default async function Webcam(props) {
+  const params = await props.params;
   const { data: partnerToken } = await getPartnerToken();
   const { data: room } = await getRoom({ nick: params.nick, partnerToken });
   const { data: iframe } = await getIframe({ roomId: room.id, partnerToken });
